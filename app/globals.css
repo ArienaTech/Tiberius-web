@@ -233,7 +233,7 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
 .manifesto{min-height:90vh;display:flex;align-items:center;}
 .manifesto-inner{max-width:1100px;}
 .manifesto .display{font-size:clamp(30px,4.6vw,66px);line-height:1.18;letter-spacing:-.025em;font-weight:600;}
-.manifesto .word{opacity:.24;display:inline-block;transition:none;}
+.manifesto .word{opacity:.45;display:inline-block;transition:none;}
 .manifesto-foot{margin-top:64px;display:flex;gap:clamp(32px,6vw,96px);flex-wrap:wrap;}
 .stat .stat-num{font-weight:700;font-size:clamp(30px,3.4vw,48px);letter-spacing:-.03em;}
 .stat .stat-num em{font-style:normal;color:var(--brass);}
