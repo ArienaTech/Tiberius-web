@@ -5,13 +5,13 @@
   --bg:        #04070F;
   --bg-2:      #081020;
   --panel:     #0A1224;
-  --ink:       #f2f1ec;
-  --ink-2:     #B3B8C6;
-  --ink-3:     #7E8494;
+  --ink:       #F7F6F2;
+  --ink-2:     #C9CDDA;
+  --ink-3:     #9CA3B6;
   --line:      rgba(255,255,255,.08);
   --line-2:    rgba(255,255,255,.14);
-  --brass:     #C9A24B;
-  --brass-dim: rgba(201,162,75,.55);
+  --brass:     #D6B15E;
+  --brass-dim: rgba(214,177,94,.6);
   --chrome-a:  #eceef2;
   --chrome-b:  #8d93a1;
 
@@ -174,7 +174,7 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
 /* readability scrims — text sections sit on a navy field so copy
    never fights the bright 3D objects passing behind them */
 #services,#work,#stack,#voices,#faq{
-  background:linear-gradient(180deg, transparent, rgba(4,7,15,.66) 9%, rgba(4,7,15,.66) 91%, transparent);
+  background:linear-gradient(180deg, transparent, rgba(4,7,15,.76) 9%, rgba(4,7,15,.76) 91%, transparent);
 }
 .display,.lede,.testi-quote,.contact-title{text-shadow:0 2px 26px rgba(4,7,15,.55);}
 .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px 24px;margin-bottom:clamp(56px,8vw,110px);flex-wrap:wrap;}
@@ -233,7 +233,7 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
 .manifesto{min-height:90vh;display:flex;align-items:center;}
 .manifesto-inner{max-width:1100px;}
 .manifesto .display{font-size:clamp(30px,4.6vw,66px);line-height:1.18;letter-spacing:-.025em;font-weight:600;}
-.manifesto .word{opacity:.14;display:inline-block;transition:none;}
+.manifesto .word{opacity:.24;display:inline-block;transition:none;}
 .manifesto-foot{margin-top:64px;display:flex;gap:clamp(32px,6vw,96px);flex-wrap:wrap;}
 .stat .stat-num{font-weight:700;font-size:clamp(30px,3.4vw,48px);letter-spacing:-.03em;}
 .stat .stat-num em{font-style:normal;color:var(--brass);}
@@ -273,7 +273,7 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
 .marquee{padding:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;}
 .marquee-track{display:flex;white-space:nowrap;will-change:transform;padding:26px 0;}
 .marquee-track span{
-  font-weight:700;font-size:clamp(20px,2.6vw,34px);letter-spacing:-.02em;color:var(--ink-3);
+  font-weight:700;font-size:clamp(20px,2.6vw,34px);letter-spacing:-.02em;color:var(--ink-2);
   padding:0 34px;display:inline-flex;align-items:center;gap:34px;
 }
 .marquee-track span::after{content:"◆";font-size:9px;color:var(--brass-dim);}
