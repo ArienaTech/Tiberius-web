@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function SiteHeader() {
+export default function SiteHeader({ intro = false }: { intro?: boolean }) {
   return (
     <>
-<header className="site-header">
+<header className={`site-header${intro ? " is-intro" : ""}`}>
   <Link className="brand" href="/">TIBERIUS<sup>®</sup></Link>
   <nav className="main-nav">
     <Link href="/services"><i>01</i>SERVICES</Link>

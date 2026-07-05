@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Stage />
       <Loader />
-      <SiteHeader />
+      <SiteHeader intro />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main id="top">
