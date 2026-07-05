@@ -16,6 +16,11 @@ export default function Contact() {
       <span>Replies within one business day</span>
       <span id="local-time">AKL 00:00</span>
     </div>
+    <div className="contact-hours" data-reveal>
+      <span className="contact-hours-label">Business Hours</span>
+      <span>Monday – Friday: 9:00am – 5:00pm (NZST)</span>
+      <span>Saturday – Sunday: By appointment</span>
+    </div>
   </section>
     </>
   );

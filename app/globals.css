@@ -556,6 +556,11 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
   margin-top:9vh;display:flex;justify-content:center;gap:clamp(28px,5vw,72px);flex-wrap:wrap;
   font-family:var(--font-mono);font-size:10.5px;letter-spacing:.26em;color:var(--ink-3);text-transform:uppercase;
 }
+.contact-hours{
+  margin-top:28px;display:flex;justify-content:center;gap:clamp(20px,4vw,48px);flex-wrap:wrap;
+  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase;
+}
+.contact-hours-label{color:var(--brass);}
 
 /* ============================================================
    Footer
