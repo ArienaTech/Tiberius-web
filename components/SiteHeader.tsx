@@ -1,15 +1,18 @@
+import Link from "next/link";
+
 export default function SiteHeader() {
   return (
     <>
 <header className="site-header">
-  <a className="brand" href="#top" data-scroll-to="#top">TIBERIUS<sup>®</sup></a>
+  <Link className="brand" href="/">TIBERIUS<sup>®</sup></Link>
   <nav className="main-nav">
-    <a href="#services" data-scroll-to="#services"><i>01</i>SERVICES</a>
-    <a href="#work" data-scroll-to="#work"><i>02</i>WORK</a>
-    <a href="#process" data-scroll-to="#process"><i>03</i>PROCESS</a>
-    <a href="#faq" data-scroll-to="#faq"><i>04</i>FAQ</a>
+    <Link href="/services"><i>01</i>SERVICES</Link>
+    <Link href="/about-us"><i>02</i>ABOUT</Link>
+    <Link href="/global-results"><i>03</i>GLOBAL RESULTS</Link>
+    <Link href="/case-studies"><i>04</i>LOCAL RESULTS</Link>
+    <Link href="/contact"><i>05</i>CONTACT</Link>
   </nav>
-  <a className="header-cta" href="#contact" data-scroll-to="#contact">BOOK A STRATEGY CALL</a>
+  <Link className="header-cta" href="/contact">BOOK A STRATEGY CALL</Link>
 </header>
     </>
   );

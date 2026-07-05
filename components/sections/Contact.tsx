@@ -11,7 +11,7 @@ export default function Contact() {
     </a>
     <a className="contact-email" href="mailto:hello@tiberius.co.nz" data-magnetic>hello@tiberius.co.nz</a>
     <div className="contact-meta" data-reveal>
-      <span>Auckland, New Zealand — HQ</span>
+      <span>73 The Strand, Parnell, Auckland 1010 — HQ</span>
       <span>Serving NZ &amp; Australia</span>
       <span>Replies within one business day</span>
       <span id="local-time">AKL 00:00</span>

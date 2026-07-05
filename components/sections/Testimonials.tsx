@@ -8,24 +8,24 @@ export default function Testimonials() {
     </div>
     <div className="testi-stage" id="testi-stage">
       <figure className="testi-slide is-active">
-        <blockquote className="testi-quote">Tiberius took us from page four to page one for “our trade + Auckland” in five months. The phone rings every day now — we hired two more staff to keep up.</blockquote>
+        <blockquote className="testi-quote">Great service, great attention to detail, made the whole process stress free and easy so I could focus on my upcoming fight.</blockquote>
         <figcaption className="testi-person">
           <span className="testi-avatar"></span>
-          <span><b>Mark T.</b><span>Owner — Auckland trades company</span></span>
+          <span><b>Haze &ldquo;The Huntsman&rdquo; Hepi</b><span>BKFC Athlete — Hard2Kill Apparel</span></span>
         </figcaption>
       </figure>
       <figure className="testi-slide">
-        <blockquote className="testi-quote">Our old agency reported clicks. Tiberius reports revenue. Same ad budget, 2.8x the return — and the monthly report actually makes sense to a business owner.</blockquote>
+        <blockquote className="testi-quote">Our business is in a completely different position thanks to Tiberius. Profound impact working with these guys.</blockquote>
         <figcaption className="testi-person">
           <span className="testi-avatar"></span>
-          <span><b>Sarah L.</b><span>Marketing Lead — NZ e-commerce brand</span></span>
+          <span><b>The Natural Funeral Company</b><span>naturalfuneral.nz</span></span>
         </figcaption>
       </figure>
       <figure className="testi-slide">
-        <blockquote className="testi-quote">The AI chatbot they built qualifies leads while we sleep. We wake up to booked strategy calls instead of an inbox of tyre-kickers.</blockquote>
+        <blockquote className="testi-quote">Tiberius Digital built us a completely custom site from scratch — new logo, online store, Afterpay integration. The process was smooth, professional and the result exceeded our expectations.</blockquote>
         <figcaption className="testi-person">
           <span className="testi-avatar"></span>
-          <span><b>James R.</b><span>Founder — B2B SaaS platform</span></span>
+          <span><b>Grease Monkey Team</b><span>greasemonkeyshop.co.nz</span></span>
         </figcaption>
       </figure>
     </div>
