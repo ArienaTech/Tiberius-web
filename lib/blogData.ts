@@ -527,7 +527,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "local-service-ads-tradies",
     title: "Local Service Ads (LSAs): The Pay-Per-Lead Game Changer for Tradies",
-    date: "December 15, 2024",
+    date: "December 15, 2026",
     teaser: "Google's LSAs put qualified tradies at the very top of search results, and you only pay for valid leads. A must-consider for plumbers, electricians, etc.",
     related: [{ label: "Google Ads Management", href: "/services/google-ads" }],
     blocks: [
@@ -573,7 +573,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ai-ethics-marketing",
     title: "Navigating the Ethical Landscape of AI in Marketing",
-    date: "November 28, 2024",
+    date: "November 28, 2026",
     teaser: "AI offers powerful marketing tools, but it comes with ethical responsibilities regarding data privacy, bias, and transparency.",
     related: [{ label: "AI Marketing Automation", href: "/services/ai-automation" }],
     blocks: [
@@ -609,7 +609,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "seo-content-marketing-symbiosis",
     title: "The Symbiotic Relationship Between SEO and Content Marketing",
-    date: "November 10, 2024",
+    date: "November 10, 2026",
     teaser: "SEO and Content Marketing aren't separate disciplines; they're two sides of the same coin, working together to attract and engage your target audience.",
     related: [{ label: "SEO Services", href: "/services/seo" }],
     blocks: [
@@ -654,7 +654,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "reputation-management-digital-age",
     title: "Reputation Management in the Digital Age: Building Trust and Credibility",
-    date: "October 25, 2024",
+    date: "October 25, 2026",
     teaser: "Your online reputation is your most valuable asset. Proactively managing reviews, social mentions, and search results is crucial for success.",
     related: [{ label: "Local SEO Services", href: "/services/seo/local-seo" }],
     blocks: [
