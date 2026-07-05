@@ -76,8 +76,11 @@ export default function SiteHeader({ intro = false }: { intro?: boolean }) {
               ))}
             </div>
           </div>
+          <Link href="/blog">
+            <i>04</i>BLOG
+          </Link>
           <Link href="/contact">
-            <i>04</i>CONTACT
+            <i>05</i>CONTACT
           </Link>
         </nav>
         <div className="header-right">
@@ -113,6 +116,9 @@ export default function SiteHeader({ intro = false }: { intro?: boolean }) {
             </Link>
           ))}
         </div>
+        <Link href="/blog" onClick={() => setMobileOpen(false)}>
+          Blog
+        </Link>
         <Link href="/contact" onClick={() => setMobileOpen(false)}>
           Contact
         </Link>
