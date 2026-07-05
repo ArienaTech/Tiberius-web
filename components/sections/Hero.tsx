@@ -1,7 +1,12 @@
+import HeroKnot from "@/components/HeroKnot";
+
 export default function Hero() {
   return (
     <>
 <section className="hero" aria-label="Intro">
+    <div className="hero-knot" aria-hidden="true">
+      <HeroKnot />
+    </div>
     <div className="hero-meta" data-reveal>
       <span>DIGITAL GROWTH AGENCY — AUCKLAND NZ</span>
       <span>SEO — GOOGLE ADS — WEB — AI AUTOMATION</span>

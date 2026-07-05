@@ -174,12 +174,30 @@ export function CtaBand({
   );
 }
 
-export function PersonCard({ name, role }: { name: string; role: string }) {
+export function PersonCard({
+  name,
+  role,
+  desc,
+  photo,
+}: {
+  name: string;
+  role: string;
+  desc?: string;
+  photo?: string;
+}) {
   return (
     <div className="person-card">
-      <img className="person-photo" src={placeholderImg(name, 240, 240)} alt={name} width={240} height={240} loading="lazy" />
+      <img
+        className="person-photo"
+        src={photo || placeholderImg(name, 240, 240)}
+        alt={name}
+        width={240}
+        height={240}
+        loading="lazy"
+      />
       <b>{name}</b>
       <p>{role}</p>
+      {desc && <p className="person-desc">{desc}</p>}
     </div>
   );
 }
