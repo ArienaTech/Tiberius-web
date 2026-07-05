@@ -1,3 +1,8 @@
+/** Append sizing/crop params to a base stock-image URL (Unsplash-style). */
+export function sizedImg(base: string, width: number, height: number) {
+  return `${base}?q=80&w=${width}&h=${height}&auto=format&fit=crop`;
+}
+
 export function placeholderImg(label: string, width = 400, height = 300) {
   const bg = "0A1224";
   const fg = "D6B15E";

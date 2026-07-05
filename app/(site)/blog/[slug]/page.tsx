@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/content/Primitives";
+import SmartImg from "@/components/SmartImg";
 import { blogPosts, getPostBySlug, type BlogBlock } from "@/lib/blogData";
-import { placeholderImg } from "@/lib/placeholder";
+import { placeholderImg, sizedImg } from "@/lib/placeholder";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -50,9 +51,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       />
 
       <section className="content-section narrow" style={{ paddingTop: 0, paddingBottom: 0 }}>
-        <img
+        <SmartImg
           className="blog-hero-img"
-          src={placeholderImg(post.title, 1000, 460)}
+          src={post.image ? sizedImg(post.image, 1600, 736) : placeholderImg(post.title, 1000, 460)}
+          fallback={placeholderImg(post.title, 1000, 460)}
           alt={post.title}
           width={1000}
           height={460}

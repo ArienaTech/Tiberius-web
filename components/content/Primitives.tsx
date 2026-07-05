@@ -176,7 +176,7 @@ export function CtaBand({
 
 export function PersonCard({ name, role, photo, desc }: { name: string; role: string; photo?: string; desc?: string }) {
   return (
-    <div className="person-card">
+    <div className="person-card" data-anim>
       <img className="person-photo" src={photo ?? placeholderImg(name, 240, 240)} alt={name} width={240} height={240} loading="lazy" />
       <b>{name}</b>
       <p>{role}</p>
