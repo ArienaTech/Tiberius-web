@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords:
     "digital marketing agency Auckland, SEO Auckland, SEO services Auckland, Google Ads Auckland, website development Auckland, AI automation, AI search optimisation, voice search optimisation, CRO, conversion rate optimisation",
   alternates: { canonical: "https://www.tiberius.co.nz/" },
+  icons: {
+    icon: [{ url: "https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/TiberiusLogo.svg", type: "image/svg+xml" }],
+    shortcut: "https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/TiberiusLogo.svg",
+    apple: "https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/TiberiusLogo.svg"
+  },
   openGraph: {
     type: "website",
     title: "Tiberius Digital — Digital Marketing Agency Auckland",
@@ -31,6 +36,8 @@ const jsonLd = {
   "name": "Tiberius Digital",
   "description": "Full-service digital growth agency in Auckland, New Zealand. SEO, Google Ads, website development, AI automation and chatbots, social media marketing, CRO, analytics and digital strategy.",
   "url": "https://www.tiberius.co.nz/",
+  "logo": "https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/TiberiusLogo.svg",
+  "image": "https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/TiberiusLogo.svg",
   "email": "hello@tiberius.co.nz",
   "address": { "@type": "PostalAddress", "addressLocality": "Auckland", "addressCountry": "NZ" },
   "areaServed": ["Auckland", "New Zealand", "Australia"],

@@ -72,7 +72,7 @@ export default function AboutUsPage() {
             height={280}
             loading="lazy"
           />
-          <div>
+          <div className="leader-info">
             <b>Mālik Mbaye — Director of Growth &amp; Venture Partner</b>
             <p>Ex-Meta | $50M+ Raised | Black Lotus Ventures</p>
             <p>
@@ -94,7 +94,7 @@ export default function AboutUsPage() {
         <div className="person-grid">
           <PersonCard
             name="Nabi Tabarruk"
-            role="Founder, Head of Executive — nabi@tiberius.co.nz"
+            role="Founder, CEO — nabi@tiberius.co.nz"
             photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Nabi.png"
             desc="Sets the strategy and owns the outcome. Every engagement Nabi leads is accountable to one number — your growth."
           />
@@ -149,17 +149,34 @@ export default function AboutUsPage() {
         </p>
         <TwoColList
           left={{
-            title: "Core Technologies",
+            title: "Tech Stack",
             items: [
-              "Web Framework: Next.js + React",
-              "Tracking: Google Analytics 4, Tag Manager",
-              "AI Platforms: Claude & Gemini",
-              "Voice AI: Interactive Voice Systems",
+              "Next.js",
+              "React",
+              "React Native",
+              "FlutterFlow",
+              "TypeScript",
+              "Tailwind CSS",
+              "Supabase",
+              "OpenAI",
+              "Stripe",
+              "Vercel",
+              "Framer Motion",
+              "Figma",
             ],
           }}
           right={{
-            title: "Creative Stack",
-            items: ["Design Stack: Tailwind CSS + Adobe Creative Suite", "Video Stack: DaVinci Resolve + 4K Drone Capture"],
+            title: "Capabilities",
+            items: [
+              "Web Applications",
+              "Cross-Platform Mobile Apps",
+              "AI Automation",
+              "UX/UI Design",
+              "Design Systems",
+              "3D Experiences",
+              "Progressive Web Apps (PWAs)",
+              "SEO / AEO / GEO Optimization",
+            ],
           }}
         />
       </section>

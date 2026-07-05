@@ -150,8 +150,9 @@ body::after{
 .site-header.is-intro{opacity:0;transform:translateY(-16px);}
 .site-header.is-intro::after{transform:scaleX(0);}
 .site-header.is-ready::after{transform:scaleX(1);}
-.brand{font-weight:700;font-size:15px;letter-spacing:.26em;}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:.26em;}
 .brand sup{font-size:8px;color:var(--brass);letter-spacing:0;}
+.brand-logo{width:26px;height:26px;object-fit:contain;flex:none;}
 .main-nav{display:flex;gap:38px;}
 .main-nav a{
   position:relative;font-family:var(--font-mono);font-size:11px;letter-spacing:.22em;color:var(--ink-2);
@@ -557,7 +558,8 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
   background:linear-gradient(180deg, transparent, rgba(8,8,10,.85));
 }
 .footer-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;}
-.footer-brand{font-weight:800;font-size:clamp(34px,4vw,56px);letter-spacing:-.04em;line-height:1;}
+.footer-brand{display:flex;align-items:center;gap:16px;font-weight:800;font-size:clamp(34px,4vw,56px);letter-spacing:-.04em;line-height:1;}
+.footer-logo{width:clamp(40px,4.5vw,56px);height:auto;object-fit:contain;flex:none;}
 .footer-cols{display:flex;gap:clamp(40px,6vw,110px);flex-wrap:wrap;}
 .footer-col h4{font-family:var(--font-mono);font-size:10px;letter-spacing:.28em;color:var(--ink-3);text-transform:uppercase;margin-bottom:18px;font-weight:400;}
 .footer-col a{display:block;font-size:14px;color:var(--ink-2);padding:5px 0;transition:color .3s,transform .3s var(--ease-swift);}
@@ -759,6 +761,9 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
 .person-card b{font-size:16px;font-weight:600;}
 .person-card p{font-size:13px;color:var(--ink-3);}
 .leader-card{display:grid;grid-template-columns:200px 1fr;gap:clamp(24px,3vw,40px);align-items:start;border:1px solid var(--line);padding:clamp(24px,3vw,36px);}
+/* breathing room between the name/title, tagline, bio and contact lines */
+.leader-card .leader-info{display:flex;flex-direction:column;gap:14px;}
+.leader-card .leader-info b{font-size:17px;}
 @media (max-width:700px){.person-grid{grid-template-columns:repeat(2,1fr);}.leader-card{grid-template-columns:1fr;}.leader-card .person-photo{max-width:180px;}}
 @media (max-width:480px){.person-grid{grid-template-columns:1fr;}}
 
