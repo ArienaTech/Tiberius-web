@@ -49,6 +49,13 @@ export default function SiteHeader({ intro = false }: { intro?: boolean }) {
     <>
       <header className={`site-header${intro ? " is-intro" : ""}`}>
         <Link className="brand" href="/">
+          <img
+            className="brand-logo"
+            src="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/TiberiusLogo.svg"
+            alt=""
+            width={26}
+            height={26}
+          />
           TIBERIUS<sup>®</sup>
         </Link>
         <nav className="main-nav">

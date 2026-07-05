@@ -6,7 +6,17 @@ export default function SiteFooter() {
 <footer className="site-footer">
     <div className="footer-top">
       <div>
-        <div className="footer-brand">TIBERIUS<sup style={{fontSize:'.35em',color:'var(--brass)'}}>®</sup></div>
+        <div className="footer-brand">
+          <img
+            className="footer-logo"
+            src="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/TiberiusLogo.svg"
+            alt="Tiberius Digital logo"
+            width={56}
+            height={56}
+            loading="lazy"
+          />
+          TIBERIUS<sup style={{fontSize:'.35em',color:'var(--brass)'}}>®</sup>
+        </div>
         <p className="lede" style={{marginTop:'18px',maxWidth:'34ch',fontSize:'14px'}}>No fluff. No bloated overheads. No excuses. Just results.</p>
       </div>
       <div className="footer-cols">
