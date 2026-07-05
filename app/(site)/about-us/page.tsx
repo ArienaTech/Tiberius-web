@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero, BlockHead, CardGrid, TwoColList, StatsRow, CtaBand, PersonCard } from "@/components/content/Primitives";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
   title: "About Us | Auckland Marketing Agency | Tiberius Digital",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function AboutUsPage() {
   return (
     <>
+      <RevealOnScroll />
       <PageHero
         title="The Auckland Team Building Tiberius Digital"
         subtitle="The Agency Built to Burn the Old Model Down."
@@ -61,7 +63,7 @@ export default function AboutUsPage() {
 
       <section className="content-section">
         <BlockHead eyebrow="Venture partner" title="Leadership & Venture Partners" />
-        <div className="leader-card">
+        <div className="leader-card" data-anim>
           <img
             className="person-photo"
             src="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Malik.png"
@@ -98,7 +100,7 @@ export default function AboutUsPage() {
           />
           <PersonCard
             name="Exavier Lattimore"
-            role="Founder, Head of Technology — exavier@tiberius.co.nz"
+            role="Head of Technology — exavier@tiberius.co.nz"
             photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Exavier.png"
             desc="Architect of the stack. Exavier engineers the sites, funnels and automations that turn traffic into pipeline."
           />
@@ -109,10 +111,10 @@ export default function AboutUsPage() {
             desc="Runs delivery like a machine — the scopes, timelines and launches that make 'live in 7 days' a promise, not a slogan."
           />
           <PersonCard
-            name="Ari Phan"
+            name="Ariena Phannaen"
             role="Head of AI Delivery & Design"
             photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Ari.png"
-            desc="A UX/UI designer and developer who bridges strategy and execution. Ari brings a rare combination of design thinking and technical delivery — building AI experiences that are intuitive, trustworthy, and ready to ship, not just ready to present."
+            desc="A UX/UI designer and developer who bridges strategy and execution. Ari brings a rare combination of design thinking and technical delivery."
           />
           <PersonCard
             name="Tom Howard"

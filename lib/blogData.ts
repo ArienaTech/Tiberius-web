@@ -8,6 +8,8 @@ export type BlogPost = {
   slug: string;
   title: string;
   date: string;
+  /** Base image URL for the post — size params are appended at render time. */
+  image?: string;
   teaser: string;
   blocks?: BlogBlock[];
   related?: { label: string; href: string }[];
@@ -16,6 +18,7 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "bing-ai-seo",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     title: "Bing Can NO LONGER Be Ignored for Local SEO",
     date: "June 2, 2025",
     teaser:
@@ -89,6 +92,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "google-maps-sauce",
+    image: "https://images.unsplash.com/photo-1524661135-423995f22d0b",
     title: "Google Maps Sauce: Strategic Reviews for Higher Rankings",
     date: "May 15, 2025",
     teaser: "Want to rank higher on Google Maps? Here's why you need strategic reviews, not just more reviews.",
@@ -165,6 +169,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ai-search-disrupting-local-marketing",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
     title: "How AI Search is Disrupting Local Marketing",
     date: "April 28, 2025",
     teaser: "The AI shift is real: AI-driven search is rewriting local marketing. 1.5 – 2.5 million Kiwis now use generative AI as their main search tool.",
@@ -201,6 +206,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "future-of-seo-ai-local",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
     title: "The Future of SEO is AI & Local",
     date: "April 10, 2025",
     teaser: "Local businesses need to prep for an AI-driven search future. It's about being the trusted answer, not just a keyword-stuffed page.",
@@ -256,6 +262,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "google-business-profile-local-seo",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
     title: "Google Business Profile: Still the King of Local SEO?",
     date: "March 25, 2025",
     teaser: "Even with AI search on the rise, a well-optimized Google Business Profile (GBP) is non-negotiable for local visibility.",
@@ -316,6 +323,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "local-seo-tradies",
+    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c",
     title: "Local SEO for Tradies: Get Found by Homeowners Who Need You NOW",
     date: "March 10, 2025",
     teaser: "Plumbers, electricians, roofers — your customers are searching online when they have an urgent need. Here's how to be the one they find.",
@@ -371,6 +379,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "topical-authority-eeat-ai-search",
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a",
     title: "Beyond Keywords: How Topical Authority & E-E-A-T Win in AI Search",
     date: "February 22, 2025",
     teaser: "AI search prioritizes expertise. Building topical authority and demonstrating E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) is crucial.",
@@ -420,6 +429,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "user-behavior-signals-local-seo",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
     title: "Cracking the Code: How User Behavior Signals Impact Local SEO",
     date: "February 5, 2025",
     teaser: "Google is watching how users interact with your listing. Click-through rates, calls, direction requests — they all matter for local rankings.",
@@ -449,6 +459,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "visual-search-local-business",
+    image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
     title: "The Rise of Visual Search: Is Your Local Business Ready?",
     date: "January 18, 2025",
     teaser: "People are searching with images, not just text. Optimizing your business's visual assets for platforms like Google Lens is becoming essential.",
@@ -488,6 +499,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "zero-click-searches-local-seo",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
     title: "Zero-Click Searches: Thriving When Google Answers Directly",
     date: "January 5, 2025",
     teaser: "Many Google searches end on the results page itself, with users getting answers from Local Packs, Knowledge Panels, or Featured Snippets. Here's how to win.",
@@ -526,6 +538,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "local-service-ads-tradies",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5",
     title: "Local Service Ads (LSAs): The Pay-Per-Lead Game Changer for Tradies",
     date: "December 15, 2026",
     teaser: "Google's LSAs put qualified tradies at the very top of search results, and you only pay for valid leads. A must-consider for plumbers, electricians, etc.",
@@ -572,6 +585,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ai-ethics-marketing",
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485",
     title: "Navigating the Ethical Landscape of AI in Marketing",
     date: "November 28, 2026",
     teaser: "AI offers powerful marketing tools, but it comes with ethical responsibilities regarding data privacy, bias, and transparency.",
@@ -608,6 +622,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "seo-content-marketing-symbiosis",
+    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
     title: "The Symbiotic Relationship Between SEO and Content Marketing",
     date: "November 10, 2026",
     teaser: "SEO and Content Marketing aren't separate disciplines; they're two sides of the same coin, working together to attract and engage your target audience.",
@@ -653,6 +668,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "reputation-management-digital-age",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216",
     title: "Reputation Management in the Digital Age: Building Trust and Credibility",
     date: "October 25, 2026",
     teaser: "Your online reputation is your most valuable asset. Proactively managing reviews, social mentions, and search results is crucial for success.",
@@ -699,6 +715,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "science-of-viral-marketing",
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7",
     title: "The Science of Viral Marketing: Understanding Memetics",
     date: "February 16, 2026",
     teaser: "Discover how understanding memetics — the study of how information replicates through social networks — can transform your marketing strategy and make your content go viral.",

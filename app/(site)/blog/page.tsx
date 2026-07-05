@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/content/Primitives";
+import SmartImg from "@/components/SmartImg";
 import { blogPosts } from "@/lib/blogData";
-import { placeholderImg } from "@/lib/placeholder";
+import { placeholderImg, sizedImg } from "@/lib/placeholder";
 
 export const metadata: Metadata = {
   title: "Marketing Blog | Insights & Strategies | Tiberius Digital",
@@ -24,9 +25,10 @@ export default function BlogIndexPage() {
         <div className="blog-grid">
           {blogPosts.map((post) => (
             <Link className="blog-card" href={`/blog/${post.slug}`} key={post.slug}>
-              <img
+              <SmartImg
                 className="blog-thumb"
-                src={placeholderImg(post.title, 400, 220)}
+                src={post.image ? sizedImg(post.image, 800, 450) : placeholderImg(post.title, 400, 220)}
+                fallback={placeholderImg(post.title, 400, 220)}
                 alt={post.title}
                 width={400}
                 height={220}

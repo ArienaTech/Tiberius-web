@@ -1,4 +1,12 @@
 import Link from "next/link";
+import SmartImg from "@/components/SmartImg";
+import { sizedImg } from "@/lib/placeholder";
+
+const workImages = {
+  roofing: "https://images.unsplash.com/photo-1632759145351-1d592919f522", // roofer at work
+  funeral: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05", // misty native bush at dawn
+  apparel: "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed",    // boxing gloves
+};
 
 export default function Work() {
   return (
@@ -10,7 +18,7 @@ export default function Work() {
     </div>
     <div className="work-grid">
       <article className="work-item" data-view>
-        <div className="work-media" data-media><div className="work-visual"><div className="wv-core wv-aeris"></div><div className="wv-glyph"></div></div></div>
+        <div className="work-media" data-media><div className="work-visual"><SmartImg className="wv-photo" src={sizedImg(workImages.roofing, 1200, 825)} alt="Roofer working on a commercial roof" loading="lazy" /><div className="wv-scrim"></div></div></div>
         <div className="work-info">
           <h3 className="work-title">Auckland Commercial Roofing</h3>
           <div className="work-meta">Technical SEO + Google Ads<br/>2026</div>
@@ -18,7 +26,7 @@ export default function Work() {
         <p className="work-result">Complete rebuild of a stagnant, non-ranking site and ad account. <b>Cost per click down from $51.05 to $5.96</b> within 20 days, plus #1 organic rankings for its core commercial roofing terms.</p>
       </article>
       <article className="work-item" data-view>
-        <div className="work-media" data-media><div className="work-visual"><div className="wv-core wv-obscura"></div><div className="wv-glyph"></div></div></div>
+        <div className="work-media" data-media><div className="work-visual"><SmartImg className="wv-photo" src={sizedImg(workImages.funeral, 1000, 1250)} alt="Misty native forest at dawn" loading="lazy" /><div className="wv-scrim"></div></div></div>
         <div className="work-info">
           <h3 className="work-title">The Natural Funeral Company</h3>
           <div className="work-meta">Google Ads + CRO<br/>2026</div>
@@ -26,7 +34,7 @@ export default function Work() {
         <p className="work-result">Rebuilt an underbuilt, stagnant ad account and optimised the site to convert the extra traffic. <b>+277% conversion growth</b> year-on-year, cost per lead down 37.5%.</p>
       </article>
       <article className="work-item" data-view>
-        <div className="work-media" data-media><div className="work-visual"><div className="wv-core wv-helix"></div><div className="wv-glyph"></div></div></div>
+        <div className="work-media" data-media><div className="work-visual"><SmartImg className="wv-photo" src={sizedImg(workImages.apparel, 1600, 686)} alt="Boxing gloves hanging in a gym" loading="lazy" /><div className="wv-scrim"></div></div></div>
         <div className="work-info">
           <h3 className="work-title">Hard2Kill Apparel</h3>
           <div className="work-meta">Shopify + Next.js<br/>2025</div>
