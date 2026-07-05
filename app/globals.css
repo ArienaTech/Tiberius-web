@@ -487,18 +487,22 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
 /* ============================================================
    Partners
    ============================================================ */
-.partner-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
-.partner-cell{background:#060B18;display:flex;align-items:center;justify-content:center;padding:26px 18px;min-height:104px;transition:background-color .3s;}
+/* 13 logos + the "+87 more" cell laid out as 3 full rows of 5 on desktop;
+   the last cell stretches to close each row so the lined grid never shows
+   a hole at any breakpoint */
+.partner-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.partner-cell{background:#060B18;display:flex;align-items:center;justify-content:center;padding:28px 20px;min-height:112px;transition:background-color .3s;}
 .partner-cell:hover{background:var(--panel);}
 /* logo palettes vary — render them as uniform silhouettes so every mark
    stays legible on the dark cells, brightening on hover */
-.partner-cell img{height:clamp(30px,3vw,44px);width:auto;max-width:100%;object-fit:contain;filter:brightness(0) invert(1) opacity(.55);transition:filter .3s;}
+.partner-cell img{height:clamp(32px,3.4vw,48px);width:auto;max-width:100%;object-fit:contain;filter:brightness(0) invert(1) opacity(.55);transition:filter .3s;}
 .partner-cell:hover img{filter:brightness(0) invert(1) opacity(.95);}
+.partner-more{grid-column:span 2;}
 .partner-more span{font-family:var(--font-mono);font-size:10px;letter-spacing:.22em;line-height:1.9;color:var(--ink-3);text-transform:uppercase;text-align:center;transition:color .3s;}
 .partner-more:hover span{color:var(--brass);}
-@media (max-width:1200px){.partner-grid{grid-template-columns:repeat(4,1fr);}}
-@media (max-width:900px){.partner-grid{grid-template-columns:repeat(3,1fr);}}
-@media (max-width:520px){.partner-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:1200px){.partner-grid{grid-template-columns:repeat(4,1fr);}.partner-more{grid-column:span 3;}}
+@media (max-width:900px){.partner-grid{grid-template-columns:repeat(3,1fr);}.partner-more{grid-column:span 2;}}
+@media (max-width:520px){.partner-grid{grid-template-columns:repeat(2,1fr);}.partner-more{grid-column:span 1;}}
 
 /* ============================================================
    FAQ
