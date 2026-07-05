@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { PageHero, BlockHead, CardGrid, TwoColList, StatsRow, CtaBand, PersonCard } from "@/components/content/Primitives";
-import { placeholderImg } from "@/lib/placeholder";
 
 export const metadata: Metadata = {
   title: "About Us | Auckland Marketing Agency | Tiberius Digital",
@@ -65,7 +64,7 @@ export default function AboutUsPage() {
         <div className="leader-card">
           <img
             className="person-photo"
-            src={placeholderImg("Mālik Mbaye", 280, 280)}
+            src="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Malik.png"
             alt="Mālik Mbaye"
             width={280}
             height={280}
@@ -91,10 +90,36 @@ export default function AboutUsPage() {
       <section className="content-section">
         <BlockHead eyebrow="The team" title="Meet Our Team" />
         <div className="person-grid">
-          <PersonCard name="Nabi Tabarruk" role="Founder, Chief Executive — nabi@tiberius.co.nz" />
-          <PersonCard name="Exavier Lattimore" role="Founder, Chief of Technology — exavier@tiberius.co.nz" />
-          <PersonCard name="Alex Breich" role="Chief of Operations — hello@tiberius.co.nz" />
-          <PersonCard name="Tom Howard" role="Director — support@tiberius.co.nz" />
+          <PersonCard
+            name="Nabi Tabarruk"
+            role="Founder, Head of Executive — nabi@tiberius.co.nz"
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Nabi.png"
+            desc="Sets the strategy and owns the outcome. Every engagement Nabi leads is accountable to one number — your growth."
+          />
+          <PersonCard
+            name="Exavier Lattimore"
+            role="Founder, Head of Technology — exavier@tiberius.co.nz"
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Exavier.png"
+            desc="Architect of the stack. Exavier engineers the sites, funnels and automations that turn traffic into pipeline."
+          />
+          <PersonCard
+            name="Alex Breich"
+            role="Head of Operations — hello@tiberius.co.nz"
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Alex.png"
+            desc="Runs delivery like a machine — the scopes, timelines and launches that make 'live in 7 days' a promise, not a slogan."
+          />
+          <PersonCard
+            name="Ari Phan"
+            role="Head of AI Delivery & Design"
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Ari.png"
+            desc="A UX/UI designer and developer who bridges strategy and execution. Ari brings a rare combination of design thinking and technical delivery — building AI experiences that are intuitive, trustworthy, and ready to ship, not just ready to present."
+          />
+          <PersonCard
+            name="Tom Howard"
+            role="Director — support@tiberius.co.nz"
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Tom.png"
+            desc="Keeps clients winning long after launch — the support, reporting and relationships that make results compound."
+          />
         </div>
       </section>
 
