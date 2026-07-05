@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero, BlockHead, CardGrid, StatsRow, TwoColList, LinkBtn, MailtoBtn } from "@/components/content/Primitives";
+import { placeholderImg } from "@/lib/placeholder";
 
 export const metadata: Metadata = {
   title: "Global Results & Case Studies | Tiberius Digital × Black Lotus Ventures",
@@ -111,6 +112,14 @@ export default function GlobalResultsPage() {
         <div className="card-grid" style={{ ["--cols" as string]: 3 }}>
           {portfolio.map((p) => (
             <div className="card-cell" key={p.title}>
+              <img
+                className="portfolio-thumb"
+                src={placeholderImg(p.title, 400, 220)}
+                alt={p.title}
+                width={400}
+                height={220}
+                loading="lazy"
+              />
               <b>{p.title}</b>
               <p style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: ".05em", color: "var(--ink-3)", textTransform: "uppercase" }}>
                 {p.tags}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero, StatsRow, LinkBtn, MailtoBtn } from "@/components/content/Primitives";
+import { placeholderImg } from "@/lib/placeholder";
 
 export const metadata: Metadata = {
   title: "Case Studies | Real Results From NZ Businesses | Tiberius Digital",
@@ -67,6 +68,14 @@ export default function CaseStudiesPage() {
           </div>
           <h3>Auckland Commercial Roofing</h3>
           <div className="case-site">aklroof.co.nz</div>
+          <img
+            className="case-screenshot"
+            src={placeholderImg("aklroof.co.nz screenshot", 900, 500)}
+            alt="Auckland Commercial Roofing website screenshot"
+            width={900}
+            height={500}
+            loading="lazy"
+          />
           <h4>The Challenge</h4>
           <p style={{ fontSize: 14.5, lineHeight: 1.7, color: "var(--ink-2)" }}>
             Auckland Commercial Roofing had an outdated website that was invisible in Google search and was
@@ -98,6 +107,14 @@ export default function CaseStudiesPage() {
           </div>
           <h3>The Natural Funeral Company</h3>
           <div className="case-site">naturalfuneral.nz</div>
+          <img
+            className="case-screenshot"
+            src={placeholderImg("naturalfuneral.nz screenshot", 900, 500)}
+            alt="The Natural Funeral Company website screenshot"
+            width={900}
+            height={500}
+            loading="lazy"
+          />
           <h4>The Situation</h4>
           <p style={{ fontSize: 14.5, lineHeight: 1.7, color: "var(--ink-2)" }}>
             TNFC&apos;s Google Ads were basically invisible. Their previous provider had left campaigns underbuilt
@@ -128,6 +145,14 @@ export default function CaseStudiesPage() {
           </div>
           <h3>Hard2Kill Apparel</h3>
           <div className="case-site">hard2killapparel.com</div>
+          <img
+            className="case-screenshot"
+            src={placeholderImg("hard2killapparel.com screenshot", 900, 500)}
+            alt="Hard2Kill Apparel website screenshot"
+            width={900}
+            height={500}
+            loading="lazy"
+          />
           <h4>The Brief</h4>
           <p style={{ fontSize: 14.5, lineHeight: 1.7, color: "var(--ink-2)" }}>
             Haze &ldquo;The Huntsman&rdquo; Hepi is a professional boxer and BKFC athlete with a growing global
@@ -151,15 +176,30 @@ export default function CaseStudiesPage() {
         </h2>
         <p className="lede" style={{ margin: "18px auto 0", textAlign: "center" }}>
           We have worked with local service businesses, global ecommerce brands, national franchises and
-          professional athletes — and every single engagement gets the same relentless standard of work. 5.0
-          stars across 21 Google Reviews.
+          professional athletes — and every single engagement gets the same relentless standard of work.
         </p>
+        <img
+          src={placeholderImg("5.0 stars — 21 Google Reviews", 260, 90)}
+          alt="5.0 stars across 21 Google Reviews"
+          width={260}
+          height={90}
+          loading="lazy"
+          style={{ margin: "28px auto 0", borderRadius: 8, border: "1px solid var(--line-2)" }}
+        />
       </section>
 
       <section className="content-section">
         <div className="card-grid" style={{ ["--cols" as string]: 3 }}>
           {testimonials.map((t) => (
             <div className="card-cell" key={t.person}>
+              <img
+                className="avatar-photo"
+                src={placeholderImg(t.person, 64, 64)}
+                alt={t.person}
+                width={64}
+                height={64}
+                loading="lazy"
+              />
               <p style={{ fontStyle: "italic" }}>&ldquo;{t.quote}&rdquo;</p>
               <b style={{ marginTop: 8 }}>{t.person}</b>
               <span style={{ fontFamily: "var(--font-mono)", fontSize: 10.5, letterSpacing: ".1em", color: "var(--ink-3)", textTransform: "uppercase" }}>

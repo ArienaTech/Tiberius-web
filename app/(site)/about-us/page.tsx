@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { PageHero, BlockHead, CardGrid, TwoColList, StatsRow, CtaBand } from "@/components/content/Primitives";
+import { PageHero, BlockHead, CardGrid, TwoColList, StatsRow, CtaBand, PersonCard } from "@/components/content/Primitives";
+import { placeholderImg } from "@/lib/placeholder";
 
 export const metadata: Metadata = {
   title: "About Us | Auckland Marketing Agency | Tiberius Digital",
@@ -61,8 +62,16 @@ export default function AboutUsPage() {
 
       <section className="content-section">
         <BlockHead eyebrow="Venture partner" title="Leadership & Venture Partners" />
-        <div className="card-grid" style={{ ["--cols" as string]: 1 }}>
-          <div className="card-cell">
+        <div className="leader-card">
+          <img
+            className="person-photo"
+            src={placeholderImg("Mālik Mbaye", 280, 280)}
+            alt="Mālik Mbaye"
+            width={280}
+            height={280}
+            loading="lazy"
+          />
+          <div>
             <b>Mālik Mbaye — Director of Growth &amp; Venture Partner</b>
             <p>Ex-Meta | $50M+ Raised | Black Lotus Ventures</p>
             <p>
@@ -81,15 +90,12 @@ export default function AboutUsPage() {
 
       <section className="content-section">
         <BlockHead eyebrow="The team" title="Meet Our Team" />
-        <CardGrid
-          columns={4}
-          items={[
-            { title: "Nabi Tabarruk", desc: "Founder, Chief Executive — nabi@tiberius.co.nz" },
-            { title: "Exavier Lattimore", desc: "Founder, Chief of Technology — exavier@tiberius.co.nz" },
-            { title: "Alex Breich", desc: "Chief of Operations — hello@tiberius.co.nz" },
-            { title: "Tom Howard", desc: "Director — support@tiberius.co.nz" },
-          ]}
-        />
+        <div className="person-grid">
+          <PersonCard name="Nabi Tabarruk" role="Founder, Chief Executive — nabi@tiberius.co.nz" />
+          <PersonCard name="Exavier Lattimore" role="Founder, Chief of Technology — exavier@tiberius.co.nz" />
+          <PersonCard name="Alex Breich" role="Chief of Operations — hello@tiberius.co.nz" />
+          <PersonCard name="Tom Howard" role="Director — support@tiberius.co.nz" />
+        </div>
       </section>
 
       <section className="content-section">

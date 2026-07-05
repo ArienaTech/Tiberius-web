@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { mailto } from "@/lib/mailto";
+import { placeholderImg } from "@/lib/placeholder";
 
 export function MailtoBtn({ subject, label, to }: { subject: string; label: string; to?: string }) {
   return (
@@ -170,6 +171,16 @@ export function CtaBand({
       {lede && <p className="lede">{lede}</p>}
       <MailtoBtn subject={ctaSubject} label={ctaLabel} />
     </section>
+  );
+}
+
+export function PersonCard({ name, role }: { name: string; role: string }) {
+  return (
+    <div className="person-card">
+      <img className="person-photo" src={placeholderImg(name, 240, 240)} alt={name} width={240} height={240} loading="lazy" />
+      <b>{name}</b>
+      <p>{role}</p>
+    </div>
   );
 }
 
