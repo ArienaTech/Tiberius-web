@@ -9,16 +9,16 @@ export default function Manifesto() {
       </p>
       <div className="manifesto-foot">
         <div className="stat" data-reveal>
-          <div className="stat-num" data-count="250" data-suffix="+"><em>0</em></div>
-          <div className="stat-label">Campaigns launched</div>
+          <div className="stat-num" data-count="100" data-suffix="+"><em>0</em></div>
+          <div className="stat-label">Brands scaled across NZ &amp; globally</div>
         </div>
         <div className="stat" data-reveal>
           <div className="stat-num" data-count="92" data-suffix="%"><em>0</em></div>
           <div className="stat-label">Client retention</div>
         </div>
         <div className="stat" data-reveal>
-          <div className="stat-num" data-count="5" data-suffix="x"><em>0</em></div>
-          <div className="stat-label">Average return on ad spend</div>
+          <div className="stat-num" data-count="300" data-suffix="%"><em>0</em></div>
+          <div className="stat-label">Average ROAS</div>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ import Work from "@/components/sections/Work";
 import Process from "@/components/sections/Process";
 import Stack from "@/components/sections/Stack";
 import Testimonials from "@/components/sections/Testimonials";
+import Partners from "@/components/sections/Partners";
 import Faq from "@/components/sections/Faq";
 import Contact from "@/components/sections/Contact";
 import SiteFooter from "@/components/sections/SiteFooter";
@@ -19,7 +20,7 @@ export default function Home() {
     <>
       <Stage />
       <Loader />
-      <SiteHeader />
+      <SiteHeader intro />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main id="top">
@@ -31,6 +32,7 @@ export default function Home() {
             <Process />
             <Stack />
             <Testimonials />
+            <Partners />
             <Faq />
             <Contact />
             <SiteFooter />
