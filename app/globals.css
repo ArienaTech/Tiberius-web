@@ -272,7 +272,13 @@ section{position:relative;padding:var(--sec-y) var(--pad-x);}
 /* ============================================================
    Hero
    ============================================================ */
-.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:8vh;}
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:8vh;}
+.hero-knot{
+  position:absolute;top:50%;right:2vw;transform:translateY(-50%);
+  width:min(46vw,560px);height:min(46vw,560px);pointer-events:none;z-index:0;
+}
+.hero-knot canvas{display:block;}
+@media (max-width:900px){.hero-knot{opacity:.5;width:70vw;height:70vw;top:38%;right:50%;transform:translate(50%,-50%);}}
 .hero-meta{
   display:flex;justify-content:space-between;gap:20px;margin-bottom:5vh;
   font-family:var(--font-mono);font-size:10.5px;letter-spacing:.26em;color:var(--ink-3);text-transform:uppercase;
