@@ -65,7 +65,7 @@ export default function AboutUsPage() {
         <div className="leader-card">
           <img
             className="person-photo"
-            src={placeholderImg("Mālik Mbaye", 280, 280)}
+            src="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Malik.png"
             alt="Mālik Mbaye"
             width={280}
             height={280}
@@ -91,10 +91,36 @@ export default function AboutUsPage() {
       <section className="content-section">
         <BlockHead eyebrow="The team" title="Meet Our Team" />
         <div className="person-grid">
-          <PersonCard name="Nabi Tabarruk" role="Founder, Chief Executive — nabi@tiberius.co.nz" />
-          <PersonCard name="Exavier Lattimore" role="Founder, Chief of Technology — exavier@tiberius.co.nz" />
-          <PersonCard name="Alex Breich" role="Chief of Operations — hello@tiberius.co.nz" />
-          <PersonCard name="Tom Howard" role="Director — support@tiberius.co.nz" />
+          <PersonCard
+            name="Nabi Tabarruk"
+            role="Founder, Head of Executive — nabi@tiberius.co.nz"
+            desc="Runs the business end to end — strategy, growth and the buck stops here."
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Nabi.png"
+          />
+          <PersonCard
+            name="Exavier Lattimore"
+            role="Founder, Head of Technology — exavier@tiberius.co.nz"
+            desc="Builds the tech stack that makes every campaign fast, secure and scalable."
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Exavier.png"
+          />
+          <PersonCard
+            name="Alex Breich"
+            role="Head of Operations — hello@tiberius.co.nz"
+            desc="Keeps every project on time and on budget — nothing falls through the cracks."
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Alex.png"
+          />
+          <PersonCard
+            name="Tom Howard"
+            role="Director — support@tiberius.co.nz"
+            desc="Oversees client relationships and makes sure every engagement delivers real ROI."
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Tom.png"
+          />
+          <PersonCard
+            name="Ari Phan"
+            role="Head of AI Delivery & Design"
+            desc="A UX/UI designer and developer who bridges strategy and execution — building AI experiences that are intuitive, trustworthy, and ready to ship, not just ready to present."
+            photo="https://cpvmmxiiwlzkqapnimws.supabase.co/storage/v1/object/public/Tiberius/Ari.png"
+          />
         </div>
       </section>
 
